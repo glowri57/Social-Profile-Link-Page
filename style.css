@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 8%);
+    
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: hsl(0, 0%, 8%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.container {
+    border: 0.625rem solid;
+    border-radius: 1rem;
+    width: 23.44rem; 
+    background-color: hsl(0, 0%, 12%);
+    margin: 1.25rem auto;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+img {
+    border-radius: 100%;
+    width: 4.4rem;
+    height: 4.4rem;
+    margin-bottom: 0.625rem;
+    margin-top: 0.94rem;
+}
+.link {
+    display: block;
+    padding: 0.625rem;
+    margin: 0.75rem auto;
+    background-color: hsl(0, 0%, 20%);
+    width: 18.75rem;
+    border-radius: 10px; 
+    font-weight: 600;  
+}
+#Instagram {
+    margin-bottom: 1.88rem;
+}
+.link a {
+    text-decoration: none;
+    color: white;
+    font-size: smaller;
+}
+h3 {
+    margin-bottom: 0.32rem;
+}
+h4 {
+    margin-bottom: 0.625rem;
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+    font-size: smaller;
+}
+p {
+    margin-bottom: 0.625rem;
+    font-size: 0.88rem;
+    padding: 0.625rem 0;
+    font-weight: 400;
+}
+.link:hover {
+    background-color: yellow;
+}
+a:hover {
+    color: black;
+}
+.attribution {
+    color: white;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media (min-width: 20rem) and (max-width: 37.5rem){
+    .container {
+        max-width: 90%;
+    }
+    .link {
+        max-width: 90%;
+    }
+}
+@media (min-width: 25rem) and (max-width: 47.5rem) {
+    body {
+        min-height: 90vh;
+    }
+}
+@media (min-width: 48rem) and (max-width: 87.5rem) {
+    body {
+        min-height: 60vh;
+    }
+}
+@media (min-width: 100rem) {
+    body {
+        min-height: 50vh;
+    }
+}
+
